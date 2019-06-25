@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Name Carousel</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400&display=swap" rel="stylesheet">
+        <link href="./styles.css" rel="stylesheet">
+    </head>
+    <body>
+    <div id="scene-wrapper">
+      <div class="scene">
+        <div id="carousel" class="carousel">
+          <div id="name1" class="carousel__cell"></div>
+          <div id="name2" class="carousel__cell"></div>
+          <div id="name3" class="carousel__cell"></div>
+          <div id="name4" class="carousel__cell"></div>
+          <div id="name5" class="carousel__cell"></div>
+          <div id="name6" class="carousel__cell"></div>
+          <div id="name7" class="carousel__cell"></div>
+          <div id="name8" class="carousel__cell"></div>
+          <div id="name9" class="carousel__cell"></div>
+          <div id="name10" class="carousel__cell"></div>
+          <div id="name11" class="carousel__cell"></div>
+          <div id="name12" class="carousel__cell"></div>
+          <div id="name13" class="carousel__cell"></div>
+          <div id="name14" class="carousel__cell"></div>
+          <div id="name15" class="carousel__cell"></div>
+          <div id="name16" class="carousel__cell"></div>
+          <div id="name17" class="carousel__cell"></div>
+          <div id="name18" class="carousel__cell"></div>
+          <div id="name19" class="carousel__cell"></div>
+          <div id="name20" class="carousel__cell"></div>
+          <div id="name21" class="carousel__cell"></div>
+          <div id="name22" class="carousel__cell"></div>
+          <div id="name23" class="carousel__cell"></div>
+          <div id="name24" class="carousel__cell"></div>
+          <div id="name25" class="carousel__cell"></div>
+          <div id="name26" class="carousel__cell"></div>
+          <div id="name27" class="carousel__cell"></div>
+          <div id="name28" class="carousel__cell"></div>
+          <div id="name29" class="carousel__cell"></div>
+          <div id="name30" class="carousel__cell"></div>
+        </div>
+      </div>
+      
+      <div class="carousel-options">
+        <p style="display: none">
+          <label>
+            Cells
+            <input class="cells-range" type="range" min="3" max="30" value="6" />
+          </label>
+        </p>
+        <div>
+          <button id ="spinner" class="main-btn green-btn spin-button">Spin!</button>
+          <!-- <button class="next-button">Next</button> -->
+        </div>
+        <br>
+        <div>
+            <button id="showNamesFormButton" class="secondary-btn blue-btn">Update Names</button>
+        </div>
+        <br>
+        <!--
+        <p>
+          Orientation:
+          <label>
+            <input type="radio" name="orientation" value="horizontal" checked />
+            horizontal
+          </label>
+          <label>
+            <input type="radio" name="orientation" value="vertical" />
+            vertical
+          </label>
+        </p>
+      -->
+     <div id="newName" style="display:none">
+        <div id="nameTableWrapper">
+          <table>
+            <tr>
+              <td class="name-text"> Name 1: </td>
+              <td> <input id="NameInput1" class="name-input" type="text" value=""> </td>
+            </tr>
+            <tr>
+              <td class="name-text"> Name 2: </td>
+              <td> <input id="NameInput2" class="name-input" type="text" value=""> </td>
+            </tr>
+            <tr>
+              <td class="name-text"> Name 3: </td>
+              <td> <input id="NameInput3" class="name-input" type="text" value=""> </td>
+            </tr>
+          </table>
+        </div>
+        <br>
+        <button class="btn blue-btn" id="addNew">Add New</button>
+        <p>
+          <button id="updateNamesButton" class="btn green-btn">Submit Names</button>
+          <br>
+          <br>
+          <button id="resetNamesButton" class="btn red-btn">Reset Names</button>
+        </p>
+      </div>
+      <!-- Template -->
+      <div id="newCellTemplate" style="display: none">
+        <div class="carousel__cell"></div>
+      </div>
+      <div id="newNameTemplate" style="display:none">
+        <table>
+          <tr>
+            <td> <div class="name-text"></div> </td>
+            <td> <input class="name-input" type="text" value=""> </td>
+            <td > <button class="delete-button"></button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    </div>
+    </body>
+    <footer>
+        <script src="./scripts.js"></script>
+    </footer>
+</html>
